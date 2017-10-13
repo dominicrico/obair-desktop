@@ -1,0 +1,60 @@
+{
+  "name": "obair",
+  "version": "0.0.1",
+  "description": "Manager your Projects and Project teams. Keep track of Tasks and Times.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "application-config": "^1.0.1",
+    "arch": "^2.1.0",
+    "auto-launch": "^5.0.1",
+    "debounce": "^1.0.2"
+  },
+  "devDependencies": {
+    "buble": "^0.16.0",
+    "electron": "^1.7.6",
+    "electron-osx-sign": "^0.4.7",
+    "electron-packager": "^9.1.0",
+    "electron-winstaller": "^2.6.3",
+    "minimist": "^1.2.0",
+    "open": "0.0.5",
+    "rimraf": "^2.6.2",
+    "spectron": "^3.7.2",
+    "tape": "^4.8.0"
+  },
+  "optionalDependencies": {
+    "appdmg": "^0.4.5"
+  },
+  "scripts": {
+    "build": "buble src --output build",
+    "clean": "node ./bin/clean.js",
+    "open-config": "node ./bin/open-config.js",
+    "start": "npm run build && electron .",
+    "watch": "nodemon --exec \"npm run start\" --ext js,css --ignore build/ --ignore dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://obair.io",
+  "keywords": [
+    "obair",
+    "time",
+    "task",
+    "project",
+    "manager",
+    "desktop",
+    "electron",
+    "electron-app"
+  ],
+  "engines": {
+    "node": ">=8.6.0"
+  },
+  "author": "Dominic Rico Gómez <hello@coderocket.me>",
+  "license": "MIT",
+  "private": true,
+  "productName": "Obair",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dominicrico/obair-desktop.git"
+  }
+}
