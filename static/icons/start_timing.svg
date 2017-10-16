@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="394px" height="367px" viewBox="0 0 394 367" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Start Timing Button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Start-Timing-Button" fill="#FF007B">
+            <g id="Group" transform="translate(42.000000, 29.000000)">
+                <g id="Group-3" fill-rule="nonzero">
+                    <path d="M155,310 C69.3958638,310 0,240.604136 0,155 C0,69.3958638 69.3958638,0 155,0 C240.604136,0 310,69.3958638 310,155 C310,240.604136 240.604136,310 155,310 Z M155,281.945701 C225.110175,281.945701 281.945701,225.110175 281.945701,155 C281.945701,84.8898251 225.110175,28.0542986 155,28.0542986 C84.8898251,28.0542986 28.0542986,84.8898251 28.0542986,155 C28.0542986,225.110175 84.8898251,281.945701 155,281.945701 Z" id="Oval-Copy"></path>
+                </g>
+                <polygon id="Triangle" points="227 156 116 229 116 83"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -4,3 +4,9 @@ package-lock.json
 build/
 dist/
 npm-debug.log*
+static/css
+test*.*
+.sass-cache
+_src_old_
+plugin.zip
+static/vendor

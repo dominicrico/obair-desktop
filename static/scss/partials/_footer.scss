@@ -1,0 +1,14 @@
+footer {
+  min-height: $footer-height;
+  background: rgba($font-color, 0.15);
+  display: flex;
+  margin-top: auto;
+  
+  .container {
+    width: 100%;
+  }
+
+  .icon {
+    cursor: pointer;
+  }
+}

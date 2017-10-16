@@ -1,0 +1,19 @@
+.input {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  border-bottom: $primary-color 1px solid;
+  border-radius: 0;
+  height: 2em;
+
+  &:active, &:focus, &:hover {
+    border: none;
+    border-bottom: $primary-color 1px solid;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.label:not(:last-child) {
+  margin-bottom: 0;
+}

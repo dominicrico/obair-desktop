@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="columns">
+    <div class="column">
+      <h1 class="title is-5">
+        Add new Project
+      </h1>
+    </div>
+  </div>
+  <div class="columns">
+    <div class="column">
+
+      <div class="field">
+        <label class="label" for="customer">Customer</label>
+        <div class="control">
+          <input type="text" name="customer" class="input" sf-typeahead datasets="customerDataset" ng-model="selectedCustomer">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="project">Project</label>
+        <div class="control">
+          <input type="text" name="project" ng-model="projectName" class="input">
+        </div>
+      </div>
+
+      <div class="field is-grouped is-grouped-right">
+        <p class="control">
+          <a class="button is-primary is-small" ng-click="add()">
+            Submit
+          </a>
+        </p>
+        <p class="control">
+          <a class="button is-light is-small" ng-click="closeThisDialog()">
+            Cancel
+          </a>
+        </p>
+      </div>
+
+      {{ selectedCustomer }}
+
+    </div>
+  </div>
+</div>

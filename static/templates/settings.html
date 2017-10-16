@@ -1,0 +1,42 @@
+<section class="section" ng-init="init()">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <h1 class="title is-5">
+          Settings
+        <h2 class="subtitle is-6">
+          Configure your preferences for Obair
+        </h2>
+      </div>
+    </div>
+    <hr>
+    <div class="columns">
+      <div class="column">
+        <div class="field">
+          <h6 class="title is-5">Conaktiv</h6>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox" ng-true-value="true" ng-false-value="false" ng-model="config.conaktiv.enable">
+              Sync with Conaktiv
+            </label>
+          </div>
+        </div>
+        <div class="field" ng-show="config.conaktiv.enable">
+          <label class="label" for="user">User</label>
+          <div class="control">
+            <input type="text" name="user" class="input" ng-model="config.conaktiv.user" ng-model-options="{ debounce: 300 }">
+          </div>
+        </div>
+
+        <div class="field" ng-show="config.conaktiv.enable">
+          <label class="label" for="password">Password</label>
+          <div class="control">
+            <input type="password" name="password" class="input" ng-model="config.conaktiv.password" ng-model-options="{ debounce: 300 }">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

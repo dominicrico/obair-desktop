@@ -1,0 +1,42 @@
+{
+  "name": "obair",
+  "description": "Manager your Projects and Project teams. Keep track of Tasks and Times.",
+  "main": "index.js",
+  "authors": [
+    "Dominic Rico Gómez <hello@coderocket.me>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "obair",
+    "time",
+    "task",
+    "project",
+    "manager",
+    "desktop",
+    "electron",
+    "electron-app"
+  ],
+  "homepage": "https://github.com/dominicrico/obair-desktop",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bulma": "^0.6.0",
+    "jquery": "^3.2.1",
+    "angular": "^1.6.6",
+    "angular-moment": "^1.1.0",
+    "moment": "momentjs#^2.19.1",
+    "ng-dialog": "^1.4.0",
+    "angular-typeahead": "^1.0.2",
+    "angular-ui-router": "^1.0.8",
+    "angular-animate": "^1.6.6",
+    "jquery.easing": "^1.3.1",
+    "jquery-throttle-debounce": "git://github.com/cowboy/jquery-throttle-debounce.git"
+  }
+}

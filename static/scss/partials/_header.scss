@@ -1,0 +1,12 @@
+header {
+  height: $header-height;
+  max-height: $header-height;
+  line-height: $header-height;
+  display: flex;
+  justify-content: space-around;
+  background: rgba($font-color, 0.15);
+
+  .is-logo {
+    max-height: 60%;
+  }
+}

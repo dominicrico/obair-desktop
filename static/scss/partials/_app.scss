@@ -1,0 +1,52 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
+.app {
+  /* Disable text selection, or your app will feel like a web page */
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+
+  /* Cover the whole window */
+  height: 100%;
+
+  /* Make sure this matches the native window background color that you pass to
+   * electron.BrowserWindow({...}), otherwise your app startup will look janky. */
+  background: $bg;
+}
+
+.loading {
+  display: flex;
+  flex: 1 0 100%;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  justify-content: space-around;
+}
+
+.is-logo {
+  align-self: center;
+  display: inline-block;
+  width: auto;
+  height: 80%;
+  max-width: 80%;
+}
+
+main,header,footer {
+  display: none;
+}
+
+ul {
+  li {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 100%;
+    width: 100%;
+    flex-direction: column;
+    &:not(:last-child) {
+      margin-bottom: 0.75em;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.project-list {
+  strong {
+    cursor: pointer;
+  }
+  li:not(:last-child) {
+    border-bottom: 1px solid rgba($font-color, 0.45);
+    padding-bottom: calc(0.75em / 2 - 1px);
+    margin-bottom: 0;
+  }
+
+  li:not(:first-child) {
+    margin-top: calc(0.75em / 2)
+  }
+}

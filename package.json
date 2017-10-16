@@ -10,7 +10,15 @@
     "application-config": "^1.0.1",
     "arch": "^2.1.0",
     "auto-launch": "^5.0.1",
-    "debounce": "^1.0.2"
+    "debounce": "^1.0.2",
+    "decompress": "^4.2.0",
+    "fs-extra": "^4.0.2",
+    "i18n": "^0.8.3",
+    "location-history": "^1.1.0",
+    "run-parallel": "^1.1.6",
+    "simple-get": "^2.7.0",
+    "soap": "^0.22.0",
+    "xml2js": "^0.4.19"
   },
   "devDependencies": {
     "buble": "^0.16.0",
@@ -32,7 +40,7 @@
     "clean": "node ./bin/clean.js",
     "open-config": "node ./bin/open-config.js",
     "start": "npm run build && electron .",
-    "watch": "nodemon --exec \"npm run start\" --ext js,css --ignore build/ --ignore dist/",
+    "watch": "nodemon --exec \"npm run start\" --ext js,css --ignore build/ --ignore dist/ & sass --watch ./static/scss/obair.scss:./static/css/main.css",
     "update-authors": "./bin/update-authors.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

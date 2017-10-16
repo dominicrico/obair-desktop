@@ -1,0 +1,18 @@
+.flex-center {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.columns{
+  display: flex;
+  &:only-child {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.column {
+  &.is-centered {
+    align-self: center;
+  }
+}

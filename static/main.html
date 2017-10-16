@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Obair Main Window</title>
+    <link rel="stylesheet" href="vendor/angular/angular-csp.css">
+    <link rel="stylesheet" href="vendor/ng-dialog/css/ngDialog.min.css">
+    <link rel="stylesheet" href="vendor/ng-dialog/css/ngDialog-theme-default.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="app is-desktop">
+    <header style="display:none;">
+      <img src="./logos/logo_rect_small.svg" alt="" class="is-logo flex-center">
+    </header>
+    <div class="loading">
+      <img src="./logos/logo_rect.svg" alt="" class="bounce-in is-logo flex-center">
+    </div>
+    <main style="display: none;" class="swipe" ng-class="{'swipe-left': left, 'swipe-right': !left}" ui-view>
+
+    </main>
+    <footer style="display: none;">
+      <div class="container flex-center">
+        <div class="columns has-text-centered">
+          <div class="column" ng-click="$root.goTo('projects')"><span class="icon"><i class="icon-folder"></i></span> Projects</div>
+          <div class="column" ng-click="$root.goTo('timesheets')"><span class="icon"><i class="icon-timesheet"></i></span> Timesheet</div>
+          <div class="column" ng-click="$root.goTo('settings')"><span class="icon"><i class="icon-settings"></i></span> Settings</div>
+        </div>
+      </div>
+    </footer>
+    <script> window.jQuery = window.$ = require('./vendor/jquery/dist/jquery.min.js')</script>
+    <script src="vendor/jquery.easing/js/jquery.easing.min.js"></script>
+    <script src="vendor/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="vendor/moment/min/moment.min.js"></script>
+    <script src="vendor/typeahead.js/dist/typeahead.bundle.min.js"></script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular-typeahead/dist/angular-typeahead.min.js"></script>
+    <script src="vendor/angular-moment/angular-moment.min.js"></script>
+    <script src="vendor/ng-dialog/js/ngDialog.min.js"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="vendor/angular-animate/angular-animate.min.js"></script>
+
+    <script src="../build/renderer/app/module.js"></script>
+    <script src="../build/renderer/app/factory/config.js"></script>
+    <script src="../build/renderer/app/factory/ipc.js"></script>
+
+    <script>require('../build/renderer/main.js')</script>
+  </body>
+</html>
